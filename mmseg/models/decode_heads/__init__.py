@@ -27,7 +27,6 @@ from .sep_fcn_att_head import FCNSepAttHead
 from .psp_att_head import PSPAttHead
 from .aspp_att_head import ASPPAttHead
 from .fcn_att_head import FCNAttHead
-from .ocr_att_head import OCRAttHead
 
 __all__ = [
     'FCNHead', 'PSPHead', 'ASPPHead', 'PSAHead', 'NLHead', 'GCHead', 'CCHead',
