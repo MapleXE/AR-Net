@@ -1,5 +1,5 @@
 _base_ = [
-    '../_base_/models/ann_r50-d8.py',
+    '../_base_/models/dmnet_r50-d8.py',
     '../_base_/datasets/rellis_g5.py',
     # '../_base_/datasets/rugd_g5.py',
     '../_base_/default_runtime.py',

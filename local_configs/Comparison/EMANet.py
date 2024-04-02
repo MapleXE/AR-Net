@@ -1,5 +1,5 @@
 _base_ = [
-    '../_base_/models/ann_r50-d8.py',
+    '../_base_/models/emanet_r50-d8.py',
     '../_base_/datasets/rellis_g5.py',
     # '../_base_/datasets/rugd_g5.py',
     '../_base_/default_runtime.py',
@@ -9,6 +9,8 @@ _base_ = [
 # model settings
 norm_cfg = dict(type='BN', requires_grad=True)
 find_unused_parameters = True
+
+
 
 # data
 data = dict(samples_per_gpu=2)
