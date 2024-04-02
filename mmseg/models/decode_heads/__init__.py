@@ -19,7 +19,7 @@ from .psp_head import PSPHead
 from .sep_aspp_head import DepthwiseSeparableASPPHead
 from .sep_fcn_head import DepthwiseSeparableFCNHead
 from .uper_head import UPerHead
-from .ours_head_class_attn import OursHeadClassAtt
+
 
 from .segformer_head import SegFormerHead
 from .segformer_revised import SegFormerAtt
@@ -27,6 +27,11 @@ from .sep_fcn_att_head import FCNSepAttHead
 from .psp_att_head import PSPAttHead
 from .aspp_att_head import ASPPAttHead
 from .fcn_att_head import FCNAttHead
+from .ann_att_head import ANNAttHead
+from .gc_att_head import GCAttHead
+from .ema_att_head import EMAAttHead
+from .dnl_att_head import DNLAttHead
+from .dm_att_head import DMAttHead
 
 __all__ = [
     'FCNHead', 'PSPHead', 'ASPPHead', 'PSAHead', 'NLHead', 'GCHead', 'CCHead',
