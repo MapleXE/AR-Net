@@ -55,13 +55,16 @@ class GCAttHead(FCNHead):
         x = self._transform_inputs(inputs)
         output = self.convs[0](x)
         output = self.gc_block(output)
-        output = self.convs[1](output)
-        if self.concat_input:
-            output = self.conv_cat(torch.cat([x, output], dim=1))
 
         attn_additional = self.attn.forward_additional(output,self.h,self.w)
         attn_additional = attn_additional.permute(1, 0, 2, 3)
         attn_additional = torch.diagonal(attn_additional, dim1=2, dim2=3).view(self.num_classes, -1, self.h, self.w)
+        
+        output = self.convs[1](output)
+        if self.concat_input:
+            output = self.conv_cat(torch.cat([x, output], dim=1))
+
+        
         output = self.cls_seg(output)
         return output, attn_additional
     
