@@ -13,6 +13,7 @@ pip install timm==0.3.2
 change this line in anaconda3/envs/env_name/lib/python3.7/site-packages/timm/models/layers/helpers.py
 
 original : #from torch._six import container_abcs
+
 change to : import collections.abc as container_abcs
 
 ## Dataset
