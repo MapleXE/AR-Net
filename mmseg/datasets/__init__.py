@@ -11,8 +11,6 @@ from .stare import STAREDataset
 from .voc import PascalVOCDataset
 from .mapillary import MapillaryDataset
 from .cocostuff import CocoStuff
-from .rellis import RELLISDataset
-from .rellis_group6_new import RELLISDataset_Group6_New
 from .rellis_group5 import RELLISDataset_Group5
 from .rugd_group5 import RUGD_Group5
 
@@ -21,5 +19,5 @@ __all__ = [
     'DATASETS', 'build_dataset', 'PIPELINES', 'CityscapesDataset',
     'PascalVOCDataset', 'ADE20KDataset', 'PascalContextDataset',
     'ChaseDB1Dataset', 'DRIVEDataset', 'HRFDataset', 'STAREDataset', 'MapillaryDataset',
-    'CocoStuff','RELLISDataset','RELLISDataset_Group6_New','RELLISDataset_Group5','RUGD_Group5'
+    'CocoStuff','RELLISDataset_Group5','RUGD_Group5'
 ]
