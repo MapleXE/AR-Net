@@ -1,5 +1,5 @@
 ## Installation
-This project is an extension of Segformer, please refer to https://github.com/NVlabs/SegFormer/tree/master for backbone and replace corresponding fold's content.
+This project is an extension of Segformer, please refer to https://github.com/NVlabs/SegFormer/tree/master for backbone and copy files to corresponding folders.
 Env setup example (works on 4070 laptop)
 ```
 conda create -n env_name python=3.7 -y
